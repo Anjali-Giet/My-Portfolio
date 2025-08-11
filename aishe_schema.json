@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AISHE Extraction Schema",
+  "type": "object",
+  "properties": {
+    "basic_details": {
+      "type": "object",
+      "properties": {
+        "aishe_code": {"type": "string"},
+        "institution_name": {"type": "string"},
+        "year_of_establishment": {"type": ["integer", "null"]},
+        "status_prior_to_establishment": {"type": "string"},
+        "year_declared_university_or_ion": {"type": ["integer", "null"]},
+        "institute_details": {
+          "type": "object",
+          "properties": {
+            "type_of_institution": {"type": "string"},
+            "ownership_status": {"type": "string"},
+            "single_gender_institution": {"type": ["boolean", "null"]},
+            "unnat_bharat_scheme_adopted": {"type": ["boolean", "null"]},
+            "minority_managed_institution": {"type": ["boolean", "null"]},
+            "minority_type": {"type": "string"},
+            "has_ncc": {"type": ["boolean", "null"]},
+            "has_nss": {"type": ["boolean", "null"]},
+            "is_specialized_university": {"type": ["boolean", "null"]},
+            "specialization_type": {"type": "string"},
+            "other_specialization": {"type": "string"}
+          },
+          "additionalProperties": true
+        }
+      },
+      "required": ["aishe_code", "institution_name", "institute_details"],
+      "additionalProperties": true
+    },
+    "vice_chancellor": {
+      "type": "object",
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "designation": {"type": ["string", "null"]},
+        "mobile": {"type": ["string", "null"]},
+        "email": {"type": ["string", "null"]},
+        "telephone": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "nodal_officer": {
+      "type": "object",
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "designation": {"type": ["string", "null"]},
+        "mobile": {"type": ["string", "null"]},
+        "email": {"type": ["string", "null"]},
+        "telephone": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "location": {"type": ["string", "null"]},
+        "address_line1": {"type": ["string", "null"]},
+        "address_line2": {"type": ["string", "null"]},
+        "city": {"type": ["string", "null"]},
+        "state": {"type": ["string", "null"]},
+        "district": {"type": ["string", "null"]},
+        "block_or_urban_local_body": {"type": ["string", "null"]},
+        "pin_code": {"type": ["string", "null"]},
+        "longitude": {"type": ["string", "null"]},
+        "latitude": {"type": ["string", "null"]},
+        "total_area_acre": {"type": ["string", "null"]},
+        "total_constructed_area_sqm": {"type": ["string", "null"]},
+        "website": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": ["basic_details"],
+  "additionalProperties": true
+}

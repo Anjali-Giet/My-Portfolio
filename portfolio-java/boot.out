@@ -1,0 +1,20 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2025-08-11T15:05:51.965Z  INFO 3202 --- [           main] c.e.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 21.0.7 with PID 3202 (/workspace/portfolio-java/target/classes started by ubuntu in /workspace/portfolio-java)
+2025-08-11T15:05:51.967Z  INFO 3202 --- [           main] c.e.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T15:05:52.402Z  INFO 3202 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T15:05:52.411Z  INFO 3202 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T15:05:52.411Z  INFO 3202 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-08-11T15:05:52.433Z  INFO 3202 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T15:05:52.434Z  INFO 3202 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 440 ms
+2025-08-11T15:05:52.482Z  INFO 3202 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-11T15:05:52.584Z  INFO 3202 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T15:05:52.588Z  INFO 3202 --- [           main] c.e.portfolio.PortfolioApplication       : Started PortfolioApplication in 0.811 seconds (process running for 0.972)
